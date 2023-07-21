@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro'
+
+import logos from '../images/deploy-logos.png';
+import logosSmall from '../images/deploy-logos-small.png';
+---
+
+<Layout title="About Astro">
+  <section class="page-content">
+    <div class="container">
+      <h2>About Astro</h2>
+      <p>
+        Astro was designed for building content-rich websites. This includes most marketing sites, publishing sites, documentation sites, blogs, portfolios, and some ecommerce sites.
+        By contrast, most modern web frameworks are designed for building web applications. These frameworks work best for building more complex, application-like experiences in the browser: logged-in admin dashboards, inboxes, social networks, todo lists, and even native-like applications like Figma and Ping.
+      </p>
+
+      <p>
+        This is one of the most important differences to understand about Astro. Astro’s unique focus on content lets Astro make tradeoffs and deliver unmatched performance features that wouldn’t make sense for more application-focused web frameworks to implement.
+      </p>
+
+      <Card dark={true}>
+        <h3>Use the tools you already love</h3>
+        <p>
+          Astro leverages server-side rendering over client-side rendering as much as possible. This is the same approach that traditional server-side frameworks -- PHP, WordPress, Laravel, Ruby on Rails, etc. -- have been using for decades. But you don’t need to learn a second server-side language to unlock it. With Astro, everything is still just HTML, CSS, and JavaScript (or TypeScript, if you prefer).
+        </p>
+      </Card>
+      
+      <h3>Deploy to anywhere, even the edge</h3>
+      <img class="logos" src={logos} alt="" />
+      <img class="logos-small" src={logosSmall} alt="" />
+      <p>
+        Good performance is always important, but it is especially critical for content-focused websites. It has been well-proven that poor performance loses you engagement, conversions, and money.
+      </p>
+
+  
+        <h3>Join our Community</h3>
+        <p>
+          Join us in the Astro Discord to share with and get help from an
+          active, friendly community!
+        </p>
+
+        <ul>
+          <li>💬 Say hi in our #introduce-yourself channel!</li>
+          <li>
+            💬 Ask our Support Squad a question in our #support-threads
+            channel!
+          </li>
+          <li>
+            💬 Share what you've been working on in our #showcase channel!
+          </li>
+        </ul>
+   
+    </div>
+  </section>
+</Layout>

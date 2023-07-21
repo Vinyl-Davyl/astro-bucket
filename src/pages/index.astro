@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro'
+import Features from '../components/Features.astro';
+import Tabs from '../components/Tabs.astro';
+---
+
+<Layout>
+	<Showcase showExtra={true}/>
+	<Features />
+	
+	<section class="page-content">
+		<div class="container">
+			<h2>Get Started With Astro</h2>
+			<p>
+				Get a new Astro project up and running locally with our helpful
+				create-astro CLI wizard!
+			</p>
+		
+			<Tabs headings={['NPM', 'PNPM', 'YARN']} contents={['$ npm create astro@latest', '$ pnpm create astro@latest', '$ yarn create astro']} />
+
+			<h3>Start Building</h3>
+			<p>
+				Astro’s goal is to be accessible to every web developer. Astro was designed to feel familiar and approachable regardless of skill level or past experience with web development.
+				We started by making sure that you could use any favorite UI component languages that you already know. React, Preact, Svelte, Vue, Solid, Lit, and several others are all supported for creating new UI components in an Astro project.
+			</p>
+		</div>
+	</section>
+</Layout>
